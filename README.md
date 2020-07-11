@@ -17,3 +17,8 @@ pip install django
 django-admin startproject kisan_direct .
 
 ```
+
+### Create Application
+```
+python manage.py startapp public
+```
