@@ -1,375 +1,288 @@
-<!--
- =========================================================
- Material Kit PRO - v2.2.0
- =========================================================
-
- Product Page: https://www.creative-tim.com/product/material-kit-pro
- Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
- Coded by Creative Tim
-
- =========================================================
-
- The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
+{% extends "_layouts/base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Material Kit PRO by Creative Tim
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="../assets/css/material-kit.css?v=2.2.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
-  <link href="../assets/demo/vertical-nav.css" rel="stylesheet" />
-</head>
+{% block page_title %}KisanDirect{% endblock %}
+{% block body_class %}blog-post sidebar-collapse{% endblock %}
+{%block page_content%}
 
-<body class="landing-page sidebar-collapse">
-  <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+<div class="page-header header-filter" data-parallax="true"
+    style="background-image: linear-gradient(#68BB59, #345E2D);">
     <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit-pro/index.html">
-          Material Kit PRO </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">apps</i> Components
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="../presentation.html" class="dropdown-item">
-                <i class="material-icons">line_style</i> Presentation
-              </a>
-              <a href="../index.html" class="dropdown-item">
-                <i class="material-icons">layers</i> All Components
-              </a>
-              <a href="http://demos.creative-tim.com/material-kit-pro/docs/2.1/getting-started/introduction.html" class="dropdown-item">
-                <i class="material-icons">content_paste</i> Documentation
-              </a>
-            </div>
-          </li>
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">view_day</i> Sections
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="../sections.html#headers" class="dropdown-item">
-                <i class="material-icons">dns</i> Headers
-              </a>
-              <a href="../sections.html#features" class="dropdown-item">
-                <i class="material-icons">build</i> Features
-              </a>
-              <a href="../sections.html#blogs" class="dropdown-item">
-                <i class="material-icons">list</i> Blogs
-              </a>
-              <a href="../sections.html#teams" class="dropdown-item">
-                <i class="material-icons">people</i> Teams
-              </a>
-              <a href="../sections.html#projects" class="dropdown-item">
-                <i class="material-icons">assignment</i> Projects
-              </a>
-              <a href="../sections.html#pricing" class="dropdown-item">
-                <i class="material-icons">monetization_on</i> Pricing
-              </a>
-              <a href="../sections.html#testimonials" class="dropdown-item">
-                <i class="material-icons">chat</i> Testimonials
-              </a>
-              <a href="../sections.html#contactus" class="dropdown-item">
-                <i class="material-icons">call</i> Contacts
-              </a>
-            </div>
-          </li>
-          <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-              <i class="material-icons">view_carousel</i> Examples
-            </a>
-            <div class="dropdown-menu dropdown-with-icons">
-              <a href="../examples/about-us.html" class="dropdown-item">
-                <i class="material-icons">account_balance</i> About Us
-              </a>
-              <a href="../examples/blog-post.html" class="dropdown-item">
-                <i class="material-icons">art_track</i> Blog Post
-              </a>
-              <a href="../examples/blog-posts.html" class="dropdown-item">
-                <i class="material-icons">view_quilt</i> Blog Posts
-              </a>
-              <a href="../examples/contact-us.html" class="dropdown-item">
-                <i class="material-icons">location_on</i> Contact Us
-              </a>
-              <a href="../examples/landing-page.html" class="dropdown-item">
-                <i class="material-icons">view_day</i> Landing Page
-              </a>
-              <a href="../examples/login-page.html" class="dropdown-item">
-                <i class="material-icons">fingerprint</i> Login Page
-              </a>
-              <a href="../examples/pricing.html" class="dropdown-item">
-                <i class="material-icons">attach_money</i> Pricing Page
-              </a>
-              <a href="../examples/shopping-cart.html" class="dropdown-item">
-                <i class="material-icons">shopping_basket</i> Shopping Cart
-              </a>
-              <a href="../examples/ecommerce.html" class="dropdown-item">
-                <i class="material-icons">store</i> Ecommerce Page
-              </a>
-              <a href="../examples/product-page.html" class="dropdown-item">
-                <i class="material-icons">shopping_cart</i> Product Page
-              </a>
-              <a href="../examples/profile-page.html" class="dropdown-item">
-                <i class="material-icons">account_circle</i> Profile Page
-              </a>
-              <a href="../examples/signup-page.html" class="dropdown-item">
-                <i class="material-icons">person_add</i> Signup Page
-              </a>
-            </div>
-          </li>
-          <li class="button-container nav-item iframe-extern">
-            <a href="https://www.creative-tim.com/product/material-kit-pro?ref=presentation" target="_blank" class="btn  btn-rose   btn-round btn-block">
-              <i class="material-icons">shopping_cart</i> Buy Now
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/bg8.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="title">Your Story Starts With Us.</h1>
-          <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
-          <br>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
-            <i class="fa fa-play"></i> Watch video
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main main-raised">
-    <div class="container">
-      <div class="section text-center">
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="title">Let&apos;s talk product</h2>
-            <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
-          </div>
-        </div>
-        <div class="features">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-info">
-                  <i class="material-icons">chat</i>
-                </div>
-                <h4 class="info-title">Free Chat</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
+            <div class="col-md-6">
+                <h1 class="title">Connects Farmers to Buyers.</h1>
+                <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this
+                    text here. Add here all the information that can make you or your product create the first
+                    impression.</h4>
+                <br>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+                    class="btn btn-danger btn-raised btn-lg">
+                    <i class="fa fa-play"></i> Watch video
+                </a>
             </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-success">
-                  <i class="material-icons">verified_user</i>
-                </div>
-                <h4 class="info-title">Verified Users</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="info">
-                <div class="icon icon-danger">
-                  <i class="material-icons">fingerprint</i>
-                </div>
-                <h4 class="info-title">Fingerprint</h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section text-center">
-        <h2 class="title">Here is our team</h2>
-        <div class="team">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="../assets/img/faces/avatar.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">Gigi Hadid <br>
-                    <small class="card-description text-muted">Model</small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                  </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="../assets/img/faces/christian.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">Christian Louboutin<br>
-                    <small class="card-description text-muted">Designer</small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                  </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="team-player">
-                <div class="card card-plain">
-                  <div class="col-md-6 ml-auto mr-auto">
-                    <img src="../assets/img/faces/kendall.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
-                  </div>
-                  <h4 class="card-title">Kendall Jenner<br>
-                    <small class="card-description text-muted">Model</small>
-                  </h4>
-                  <div class="card-body">
-                    <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some <a href="#">links</a> for people to be able to follow them outside the site.</p>
-                  </div>
-                  <div class="card-footer justify-content-center">
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-instagram"></i></a>
-                    <a href="#pablo" class="btn btn-link btn-just-icon"><i class="fa fa-facebook-square"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section section-contacts">
-        <div class="row">
-          <div class="col-md-8 ml-auto mr-auto">
-            <h2 class="text-center title">Work with us</h2>
-            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
-            <form class="contact-form">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Your Name</label>
-                    <input type="email" class="form-control">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label class="bmd-label-floating">Your Email</label>
-                    <input type="email" class="form-control">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
-              </div>
-              <div class="row">
-                <div class="col-md-4 ml-auto mr-auto text-center">
-                  <button class="btn btn-primary btn-raised">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="footer footer-default">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
-            </a>
-          </li>
-          <li>
-            <a href="https://creative-tim.com/presentation">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="http://blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-      </div>
-    </div>
-  </footer>
-  <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="../assets/js/plugins/moment.min.js"></script>
-  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-  <script src="../assets/js/plugins/bootstrap-tagsinput.js"></script>
-  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-  <script src="../assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
-  <!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-  <script src="../assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
-  <!--	Plugin for Small Gallery in Product Page -->
-  <script src="../assets/js/plugins/jquery.flexisel.js" type="text/javascript"></script>
-  <!-- Plugins for presentation and navigation  -->
-  <script src="../assets/demo/modernizr.js" type="text/javascript"></script>
-  <script src="../assets/demo/vertical-nav.js" type="text/javascript"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Js With initialisations For Demo Purpose, Don't Include it in Your Project -->
-  <script src="../assets/demo/demo.js" type="text/javascript"></script>
-  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/material-kit.js?v=2.2.0" type="text/javascript"></script>
-</body>
+            <div class="col-md-6">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100%" height="150%"
+                    preserveAspectRatio="xMidYMid meet">
 
-</html>
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#A4DE02"
+                        stroke="none">
+                        <path d="M4151 4181 c-109 -189 -117 -199 -173 -236 -72 -46 -189 -170 -218
+                        -231 -32 -66 -25 -136 21 -200 l35 -49 65 -3 c123 -5 182 50 214 203 16 77 19
+                        196 6 262 -8 40 -2 56 80 245 49 111 87 203 86 204 -1 1 -53 -87 -116 -195z" />
+                        <path d="M3820 4178 c-94 -162 -220 -414 -220 -440 0 -21 36 -78 49 -78 4 0
+                        17 34 29 75 32 107 116 331 172 458 26 59 46 107 45 107 -2 0 -36 -55 -75
+                        -122z" />
+                        <path d="M4416 4014 c-28 -59 -163 -271 -250 -392 -44 -62 -87 -122 -95 -132
+                        -13 -19 -11 -20 37 -20 l50 0 51 88 c68 119 237 480 228 488 -2 2 -11 -12 -21
+                        -32z" />
+                        <path d="M3451 3895 c-56 -123 -101 -298 -101 -394 0 -140 99 -281 198 -281
+                        50 0 99 25 122 62 17 27 20 46 18 103 -4 81 -36 159 -116 276 -72 108 -84 135
+                        -91 213 l-7 71 -23 -50z" />
+                        <path d="M3218 3435 c-47 -144 -62 -233 -56 -336 5 -92 24 -141 80 -204 40
+                        -47 77 -65 130 -65 56 0 105 30 125 78 35 83 -9 208 -124 360 -75 97 -99 147
+                        -111 223 l-8 54 -36 -110z" />
+                        <path d="M4366 3469 c-51 -38 -87 -47 -233 -59 -239 -20 -363 -90 -363 -203 0
+                        -43 34 -95 80 -121 51 -31 149 -27 224 7 100 46 220 179 316 350 17 31 28 57
+                        23 56 -4 0 -25 -14 -47 -30z" />
+                        <path d="M867 3260 c146 -252 171 -304 178 -379 13 -143 64 -266 125 -304 41
+                        -26 138 -29 166 -6 46 38 68 144 40 197 -31 59 -147 151 -248 195 -51 23 -62
+                        35 -158 168 -109 153 -136 186 -103 129z" />
+                        <path d="M1275 3067 c50 -100 105 -213 121 -252 l31 -70 21 34 21 34 -25 49
+                        c-25 50 -240 374 -253 382 -4 3 34 -77 84 -177z" />
+                        <path d="M3053 3110 c-55 -122 -93 -279 -93 -387 0 -98 28 -172 90 -234 54
+                        -54 102 -68 164 -47 128 43 115 222 -32 426 -75 105 -95 148 -102 222 l-6 65
+                        -21 -45z" />
+                        <path d="M4191 3060 c-56 -37 -118 -50 -244 -50 -109 0 -215 -18 -269 -45
+                        -110 -56 -137 -165 -60 -237 44 -42 73 -52 145 -50 129 2 244 79 371 248 54
+                        73 114 166 104 163 -2 0 -23 -13 -47 -29z" />
+                        <path d="M1563 2956 c0 -57 -7 -78 -51 -173 -59 -129 -61 -135 -72 -197 -20
+                        -128 51 -210 153 -177 105 35 149 189 98 346 -21 65 -70 171 -110 235 l-18 31
+                        0 -65z" />
+                        <path d="M812 2863 c74 -131 171 -288 203 -327 20 -26 26 -28 65 -21 l42 7
+                        -45 47 c-61 64 -180 209 -256 314 -35 48 -65 87 -67 87 -2 0 24 -48 58 -107z" />
+                        <path d="M2838 2700 c-106 -291 -97 -485 28 -600 72 -66 173 -62 222 10 21 31
+                        23 44 20 105 -6 85 -41 160 -134 286 -74 99 -92 139 -102 217 l-7 57 -27 -75z" />
+                        <path d="M1785 2647 c-1 -50 -7 -73 -33 -122 -107 -199 -131 -274 -112 -346
+                        20 -72 100 -110 163 -78 68 35 117 127 117 218 0 71 -34 191 -84 297 -25 52
+                        -46 94 -48 94 -2 0 -3 -28 -3 -63z" />
+                        <path d="M4006 2679 c-53 -40 -118 -56 -271 -68 -229 -17 -345 -82 -345 -191
+                        0 -94 93 -159 208 -145 146 17 283 142 426 388 15 26 26 47 24 46 -1 0 -20
+                        -14 -42 -30z" />
+                        <path d="M830 2512 c0 -6 53 -73 110 -140 50 -60 145 -135 199 -159 21 -9 66
+                        -16 106 -17 80 -1 113 14 145 67 43 69 17 136 -68 175 -54 26 -64 27 -222 27
+                        -158 0 -168 2 -218 26 -29 14 -52 24 -52 21z" />
+                        <path d="M1985 2331 c0 -60 -5 -76 -52 -166 -28 -55 -58 -125 -67 -155 -40
+                        -135 2 -230 102 -230 56 0 102 34 134 100 49 99 35 215 -47 387 -66 140 -70
+                        143 -70 64z" />
+                        <path d="M2622 2288 c-48 -169 -63 -321 -41 -418 5 -25 25 -68 44 -97 67 -101
+                        142 -133 227 -95 124 54 95 223 -72 422 -85 102 -109 145 -117 211 -3 27 -9
+                        49 -13 49 -4 0 -16 -33 -28 -72z" />
+                        <path d="M3835 2284 c-47 -37 -109 -52 -253 -59 -143 -7 -223 -23 -286 -58
+                        -112 -61 -115 -200 -6 -259 28 -16 50 -19 115 -16 103 5 163 36 260 133 64 64
+                        214 269 204 279 -2 2 -17 -7 -34 -20z" />
+                        <path d="M1058 2143 c60 -77 191 -191 254 -222 51 -26 73 -31 132 -31 85 0
+                        131 20 158 71 23 44 23 76 -2 117 -42 68 -148 91 -329 71 -121 -13 -138 -11
+                        -226 27 -15 6 -13 -1 13 -33z" />
+                        <path d="M2198 2022 c-3 -58 -10 -79 -50 -150 -65 -115 -90 -186 -92 -257 -1
+                        -97 47 -144 136 -132 55 7 102 55 129 132 26 75 21 140 -21 266 -27 80 -85
+                        209 -94 209 -2 0 -5 -31 -8 -68z" />
+                        <path d="M3615 1856 c-59 -30 -61 -31 -220 -32 -216 -1 -306 -26 -359 -97 -49
+                        -66 -14 -172 70 -212 54 -25 172 -17 239 17 71 37 153 107 222 191 68 83 128
+                        168 116 166 -4 -1 -35 -16 -68 -33z" />
+                        <path d="M1240 1872 c0 -14 92 -121 155 -180 98 -92 162 -122 257 -122 87 0
+                        131 22 154 75 30 72 5 128 -73 166 -45 23 -58 24 -228 24 -164 0 -184 2 -222
+                        21 -24 12 -43 19 -43 16z" />
+                        <path d="M2423 1724 c-3 -57 -14 -83 -91 -211 -87 -144 -102 -255 -42 -315 23
+                        -23 37 -28 77 -28 71 0 105 27 148 115 31 63 33 151 6 258 -20 75 -77 223 -89
+                        231 -4 2 -8 -20 -9 -50z" />
+                        <path d="M2770 1572 c0 -48 -47 -199 -96 -307 -25 -55 -47 -104 -50 -110 -4
+                        -9 69 -45 92 -45 6 0 28 25 48 55 42 64 129 169 198 241 l49 51 -113 68 c-62
+                        38 -116 70 -120 72 -5 2 -8 -9 -8 -25z" />
+                        <path d="M1439 1543 c20 -39 146 -166 207 -209 84 -60 139 -78 219 -71 79 6
+                        117 31 140 92 16 42 16 46 -1 82 -13 25 -34 47 -64 63 -44 24 -50 25 -245 25
+                        -174 0 -204 2 -233 18 -32 18 -33 18 -23 0z" />
+                        <path d="M1630 1220 c0 -22 194 -190 260 -224 160 -84 315 -46 327 81 5 42 1
+                        53 -22 81 -50 60 -169 76 -335 47 -87 -16 -140 -13 -197 11 -18 7 -33 9 -33 4z" />
+                        <path d="M2337 1037 l-98 -52 28 -19 c46 -32 120 -115 181 -203 31 -45 60 -82
+                        64 -82 4 -1 22 11 38 27 l31 27 -27 60 c-14 33 -43 112 -64 175 -21 63 -42
+                        115 -46 117 -5 1 -53 -21 -107 -50z" />
+                    </g>
+                </svg>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main main-raised">
+    <div class="container">
+        <div class="section text-center">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="title">Let&apos;s talk product</h2>
+                    <h5 class="description">This is the paragraph where you can write more details about your product.
+                        Keep you user engaged by providing meaningful information. Remember that by this time, the user
+                        is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to
+                        see more.</h5>
+                </div>
+            </div>
+            <div class="features">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-info">
+                                <i class="material-icons">chat</i>
+                            </div>
+                            <h4 class="info-title">Free Chat</h4>
+                            <p>Divide details about your product or agency work into parts. Write a few lines about each
+                                one. A paragraph describing a feature will be enough.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="material-icons">verified_user</i>
+                            </div>
+                            <h4 class="info-title">Verified Users</h4>
+                            <p>Divide details about your product or agency work into parts. Write a few lines about each
+                                one. A paragraph describing a feature will be enough.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-danger">
+                                <i class="material-icons">fingerprint</i>
+                            </div>
+                            <h4 class="info-title">Fingerprint</h4>
+                            <p>Divide details about your product or agency work into parts. Write a few lines about each
+                                one. A paragraph describing a feature will be enough.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <h2 class="title">Here is our team</h2>
+            <div class="team">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="../assets/img/faces/avatar.jpg" alt="Thumbnail Image"
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title">Gigi Hadid <br>
+                                    <small class="card-description text-muted">Model</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">You can write here details about one of your team
+                                        members. You can give more details about what they do. Feel free to add some <a
+                                            href="#">links</a> for people to be able to follow them outside the site.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-instagram"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="../assets/img/faces/christian.jpg" alt="Thumbnail Image"
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title">Christian Louboutin<br>
+                                    <small class="card-description text-muted">Designer</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">You can write here details about one of your team
+                                        members. You can give more details about what they do. Feel free to add some <a
+                                            href="#">links</a> for people to be able to follow them outside the site.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="team-player">
+                            <div class="card card-plain">
+                                <div class="col-md-6 ml-auto mr-auto">
+                                    <img src="../assets/img/faces/kendall.jpg" alt="Thumbnail Image"
+                                        class="img-raised rounded-circle img-fluid">
+                                </div>
+                                <h4 class="card-title">Kendall Jenner<br>
+                                    <small class="card-description text-muted">Model</small>
+                                </h4>
+                                <div class="card-body">
+                                    <p class="card-description">You can write here details about one of your team
+                                        members. You can give more details about what they do. Feel free to add some <a
+                                            href="#">links</a> for people to be able to follow them outside the site.
+                                    </p>
+                                </div>
+                                <div class="card-footer justify-content-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-instagram"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon"><i
+                                            class="fa fa-facebook-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-contacts">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <h2 class="text-center title">Work with us</h2>
+                    <h4 class="text-center description">Divide details about your product or agency work into parts.
+                        Write a few lines about each one and contact us about any further collaboration. We will
+                        responde get back to you in a couple of hours.</h4>
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Your Name</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Your Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                            <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 ml-auto mr-auto text-center">
+                                <button class="btn btn-primary btn-raised">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
