@@ -118,7 +118,7 @@
         <div class="section text-center">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
-                    <h2 class="title">Let&apos;s talk product</h2>
+                    <h2 class="title">About the platform</h2>
                     <h5 class="description">This is the paragraph where you can write more details about your product.
                         Keep you user engaged by providing meaningful information. Remember that by this time, the user
                         is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to
@@ -126,7 +126,7 @@
                 </div>
             </div>
             <div class="features">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-4">
                         <div class="info">
                             <div class="icon icon-info">
@@ -157,6 +157,46 @@
                                 one. A paragraph describing a feature will be enough.</p>
                         </div>
                     </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mermaid">
+                            graph TD
+                                %% Objects
+                                B1(fa:fa-industry <br/> Buyer 1)
+                                B2(fa:fa-industry <br/> Buyer 2)
+                                B3(fa:fa-industry <br/> Buyer 3)
+                                P(Kisan Direct)
+                                F(fa:fa-tractor Farmer)
+                                
+                                %% Releation
+                                B1 --> P
+                                B2 --> P
+                                B3 --> P
+                                P --> F
+                            
+                                %% Style Definition
+                                classDef buyer_green fill:#68bb59,stroke:#345e2d,stroke-width:1px,color:#fff;
+                                classDef farmer_green fill:#A4DE02,stroke:#1E5631,stroke-width:1px,color:#1E5631;
+                                classDef platform fill:#00bcd4,stroke:#00bcd4,stroke-width:1px,color:#fff;
+                            
+                                %% Apply Style
+                                class B1,B2,B3 buyer_green
+                                class F farmer_green
+                                class P platform                          
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info">
+                            <div class="icon icon-success">
+                                <i class="material-icons">verified_user</i>
+                            </div>
+                            <h4 class="info-title">Verified Users</h4>
+                            <p>Divide details about your product or agency work into parts. Write a few lines about each
+                                one. A paragraph describing a feature will be enough.</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -286,3 +326,8 @@
     </div>
 </div>
 {%endblock%}
+
+
+{% block extra_scripts %}
+<script>mermaid.initialize({startOnLoad:true});</script>
+{% endblock %}
