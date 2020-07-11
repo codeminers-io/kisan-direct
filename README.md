@@ -16,9 +16,11 @@ pip install django
 
 django-admin startproject kisan_direct .
 
+pip freeze > requirements.txt
 ```
 
 ### Create Application
 ```
 python manage.py startapp public
+python manage.py startapp api
 ```
