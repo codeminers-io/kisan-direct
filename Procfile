@@ -1,0 +1,1 @@
+web: gunicorn kisan_direct.wsgi
