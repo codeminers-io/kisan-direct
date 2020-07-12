@@ -1,8 +1,12 @@
 .navbar{
-    color: #1E5631;
-    background-color: #A4DE02 !important;
+    color: #ffffff;
+    background-color: #1E5631 !important;
     border-bottom: 1px solid #FFFFFF;
 }
     .navbar-transparent{
         border:0 !important;
     }
+
+.mermaid svg {
+    text-align: center;
+}
