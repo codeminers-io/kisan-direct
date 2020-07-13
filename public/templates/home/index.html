@@ -13,7 +13,9 @@
             <div class="col-md-6">
                 <h1 class="title">
                     {% if request.session.lang == "hi" %}
-                    जोड़ता किसानों को खरीदारों से
+                    जोड़ता किसानों को खरीदारों से                    
+                    {% elif request.session.lang == "ml" %}
+                    കൃഷിക്കാരനിൽ നിന്നും നേരിട്ട് വാങ്ങുന്നയാൾക്ക് 
                     {% else %}
                     Connects Farmers to Buyers.
                     {% endif %}
@@ -328,10 +330,4 @@
 
 {% block extra_scripts %}
 <script>mermaid.initialize({ startOnLoad: true });</script>
-<script>
-    $.ajax({
-        url: '/switch_to_language_link/hi',
-        success: function (data) { console.log(data); }
-    });
-</script>
 {% endblock %}

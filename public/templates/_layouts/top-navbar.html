@@ -6,9 +6,11 @@
             <a class="navbar-brand" href="/">
                 <strong>
                     {% if request.session.lang == "hi" %}
-                        किसान डैरेक्ट
+                    किसान डैरेक्ट
+                    {% elif request.session.lang == "ml" %}
+                    കിസാൻ ഡയറക്റ്റ്
                     {% else %}
-                        Kisan Direct
+                    Kisan Direct
                     {% endif %}
                 </strong>
                 &nbsp; </a>
@@ -113,7 +115,29 @@
                         </a>
                     </div>
                 </li> -->
-
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">translate</i>
+                        {% if request.session.lang == "hi" %}
+                        हिन्दी
+                        {% elif request.session.lang == "ml" %}
+                        മലയാളം
+                        {% else %}
+                        English
+                        {% endif %}
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="javascript:switch_to_language('hi');" class="dropdown-item">
+                            हिन्दी
+                        </a>
+                        <a href="javascript:switch_to_language('en');" class="dropdown-item">
+                            English
+                        </a>
+                        <a href="javascript:switch_to_language('ml');" class="dropdown-item">
+                            മലയാളം
+                        </a>
+                    </div>
+                </li>
                 <li class="dropdown nav-item">
                     <a href="/farmer" class="nav-link">
                         <i class="material-icons">agriculture</i> Farmer
@@ -133,3 +157,15 @@
         </div>
     </div>
 </nav>
+
+{% block extra_scripts %}
+<script>
+    function switch_to_language(language) {
+        $.ajax({
+            url: '/switch_to_language_link/' + language,
+            success: function (data) { console.log(data); }
+        });
+        location.reload();
+    }
+</script>
+{% endblock %}
