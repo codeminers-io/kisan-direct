@@ -1,5 +1,15 @@
 # Kisan-Direct
 
+## Run Locally
+```
+python -m venv .env
+# Windows
+.\.env\Scripts\activate
+
+pip install -r requirements.txt 
+
+python manage.py runserver
+```
 
 ## Project Creation
 ```
