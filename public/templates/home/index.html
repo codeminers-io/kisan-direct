@@ -1,5 +1,6 @@
 {% extends "_layouts/base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_title %}KisanDirect{% endblock %}
 {% block body_class %}blog-post sidebar-collapse{% endblock %}
@@ -10,13 +11,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="title">Connects Farmers to Buyers.</h1>
+                <h1 class="title">
+                    {% if request.session.lang == "hi" %}
+                    जोड़ता किसानों को खरीदारों से
+                    {% else %}
+                    Connects Farmers to Buyers.
+                    {% endif %}
+                </h1>
                 <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this
                     text here. Add here all the information that can make you or your product create the first
                     impression.</h4>
                 <br>
-                <a href="javascript:scrollToAnchor('about-the-platform');"
-                    class="btn btn-danger btn-raised btn-lg">
+                <a href="javascript:scrollToAnchor('about-the-platform');" class="btn btn-danger btn-raised btn-lg">
                     Know More <i class="material-icons">arrow_forward_ios</i>
                 </a>
             </div>
@@ -322,4 +328,10 @@
 
 {% block extra_scripts %}
 <script>mermaid.initialize({ startOnLoad: true });</script>
+<script>
+    $.ajax({
+        url: '/switch_to_language_link/hi',
+        success: function (data) { console.log(data); }
+    });
+</script>
 {% endblock %}

@@ -4,7 +4,13 @@
         <div class="navbar-translate">
             <!-- class="d-none d-sm-block"-->
             <a class="navbar-brand" href="/">
-                <strong>Kisan Direct</strong>
+                <strong>
+                    {% if request.session.lang == "hi" %}
+                        किसान डैरेक्ट
+                    {% else %}
+                        Kisan Direct
+                    {% endif %}
+                </strong>
                 &nbsp; </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                 aria-label="Toggle navigation">

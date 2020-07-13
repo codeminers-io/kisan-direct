@@ -4,9 +4,12 @@ import os
 
 
 def index(request):
+    #request.session['lang'] = 'hi'
     context = {'latest_question_list': "latest_question_list"}
     return render(request, 'home/index.html', context)
 
+def switch_to_language_link(request, language='en'):
+    request.session['lang'] = language
 
 def apple_touch_icon_png(request):
     valid_image = os.path.join(os.path.dirname(os.path.dirname(
