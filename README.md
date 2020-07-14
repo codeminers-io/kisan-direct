@@ -33,4 +33,5 @@ pip freeze > requirements.txt
 ```
 python manage.py startapp public
 python manage.py startapp api
+python manage.py startapp accounts
 ```
