@@ -16,6 +16,7 @@ python manage.py runserver
 python -m venv .env
 
 # Linux
+# python3 -m venv .env
 # source .env/bin/activate
 
 # Windows
