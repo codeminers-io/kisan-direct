@@ -8,4 +8,5 @@ urlpatterns = [
     path('apple-touch-icon.png', home.apple_touch_icon_png, name='apple_touch_icon_png'),
     path('favicon.png', home.favicon_png, name='favicon_png'),
     path('favicon.ico', home.favicon_ico, name='favicon_ico'),
+    path('public/farmers', home.index, name='index'),
 ]

@@ -10,11 +10,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-          <form class="form" method="" action="">
+          <form class="form" method="" action="">            
+            {% csrf_token %}
             <div class="card card-login card-hidden">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Login</h4>
-                <div class="social-line">
+                <!-- <div class="social-line">
                   <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
                     <i class="fa fa-facebook-square"></i>
                   </a>
@@ -24,11 +25,11 @@
                   <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
                     <i class="fa fa-google-plus"></i>
                   </a>
-                </div>
+                </div> -->
               </div>
               <div class="card-body ">
-                <p class="card-description text-center">Or Be Classical</p>
-                <span class="bmd-form-group">
+                <p class="card-description text-center">Or Signup</p>
+                <!-- <span class="bmd-form-group">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text">
@@ -37,15 +38,37 @@
                     </div>
                     <input type="text" class="form-control" placeholder="First Name...">
                   </div>
-                </span>
+                </span> -->
+                <div class="radio-tile-group">
+                  <div class="input-container">
+                    <input id="walk" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon walk-icon">                        
+                        <i class="material-icons">agriculture</i> 
+                      </div>
+                      <label for="walk" class="radio-tile-label">Farmers</label>
+                    </div>
+                  </div>
+              
+                  <div class="input-container">
+                    <input id="bike" class="radio-button" type="radio" name="radio" />
+                    <div class="radio-tile">
+                      <div class="icon bike-icon">
+                        <i class="material-icons">business</i> 
+                      </div>
+                      <label for="bike" class="radio-tile-label">Buyers</label>
+                    </div>
+                  </div>
+                </div>
+              
                 <span class="bmd-form-group">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <span class="input-group-text">
-                        <i class="material-icons">email</i>
+                        <i class="material-icons">smartphone</i>
                       </span>
                     </div>
-                    <input type="email" class="form-control" placeholder="Email...">
+                    <input type="tel" class="form-control" placeholder="Phone number...">
                   </div>
                 </span>
                 <span class="bmd-form-group">
