@@ -140,12 +140,26 @@
                 </li>
                 <li class="dropdown nav-item">
                     <a href="/public/farmers" class="nav-link">
-                        <i class="material-icons">agriculture</i> Farmers
+                        <i class="material-icons">agriculture</i>
+                        {% if request.session.lang == "hi" %}
+                        किसानों
+                        {% elif request.session.lang == "ml" %}
+                        കർഷകർ
+                        {% else %}
+                        Farmers
+                        {% endif %}
                     </a>
                 </li>
                 <li class="dropdown nav-item">
                     <a href="/public/buyers" class="nav-link">
-                        <i class="material-icons">business</i> Buyers
+                        <i class="material-icons">business</i>
+                        {% if request.session.lang == "hi" %}
+                        खरीदारों
+                        {% elif request.session.lang == "ml" %}
+                        വാങ്ങുന്നവർ
+                        {% else %}
+                        Buyers
+                        {% endif %}
                     </a>
                 </li>
                 <li class="button-container nav-item iframe-extern">
